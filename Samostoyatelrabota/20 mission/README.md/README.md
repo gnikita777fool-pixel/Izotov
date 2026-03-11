@@ -43,13 +43,14 @@ docker exec -it welcome-to-docker /bin/sh
 
 uname -a
 
+![alt text](image-4.png)
 ---
 
 Диспетчер ресурсов
 
 top
 
-![alt text](image-4.png)
+![alt text](image-5.png)
 ---
 
 Обновить источники приложений
