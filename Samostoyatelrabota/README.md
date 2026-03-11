@@ -1,4 +1,4 @@
-## [Самостоятельная работа 20 заданий](/Samostoyatelrabota/20mission/README.md)
+## [Самостоятельная работа 20 заданий](/Pople/README.md)
 
 ## [Работа с Docker](./Docker.md)
 
