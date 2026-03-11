@@ -26,7 +26,7 @@
 
 # Задание 3. Открыть приложение в браузере
 
-Адрес: http://localhost:8088
+**Адрес: http://localhost:8088**
 
 <img width="2559" height="1274" alt="image" src="https://github.com/user-attachments/assets/c5cec537-c6ac-4808-9810-cb9753400122" />
 
@@ -36,7 +36,7 @@
 
 Команда:
 
-docker exec -it welcome-to-docker /bin/sh
+**docker exec -it welcome-to-docker /bin/sh**
 
 ---
 
@@ -44,7 +44,7 @@ docker exec -it welcome-to-docker /bin/sh
 
 Команда:
 
-uname -a
+**uname -a**
 
 <img width="2047" height="50" alt="image" src="https://github.com/user-attachments/assets/5bf3159e-a67c-478b-8e4d-dd32a234cce8" />
 
@@ -54,7 +54,7 @@ uname -a
 
 Команда:
 
-top
+**top**
 
 <img width="807" height="444" alt="image" src="https://github.com/user-attachments/assets/1cab6cfb-556b-428f-a413-6cfdbf918923" />
 
@@ -64,7 +64,7 @@ top
 
 Команда:
 
-apk update && apk upgrade
+**apk update && apk upgrade**
 
 <img width="2058" height="405" alt="image" src="https://github.com/user-attachments/assets/c321ccdf-3e22-45f1-9490-a498f8b77657" />
 
@@ -74,7 +74,7 @@ apk update && apk upgrade
 
 Команда:
 
-apk add fastfetch
+**apk add fastfetch**
 
 <img width="2041" height="85" alt="image" src="https://github.com/user-attachments/assets/b5e6f4eb-2e44-4115-996e-e17a4ce60653" />
 
@@ -84,7 +84,7 @@ apk add fastfetch
 
 Команда:
 
-fastfetch
+**fastfetch**
 
 <img width="2030" height="344" alt="image" src="https://github.com/user-attachments/assets/79116ba1-f859-47dc-816b-ee3339c3fe65" />
 
