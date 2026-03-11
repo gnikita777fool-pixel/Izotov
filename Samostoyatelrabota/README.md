@@ -1,1 +1,1 @@
-## [Работа с Docker](/Samostoyatelrabot/Docker.md)
+## [Работа с Docker](./Docker.md)
