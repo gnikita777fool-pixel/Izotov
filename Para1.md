@@ -2,14 +2,14 @@
 
 ---
 
-## Задание 1. Проверить, свободен ли порт 8088
+# Задание 1. Проверить, свободен ли порт 8088
 Команды:
 
 ## Linux/Mac/WSL
-netstat -tuln | grep :8088
+**netstat -tuln | grep :8088**
 
 ## Windows
-netstat -aon | findstr :8088
+**netstat -aon | findstr :8088**
 
 <img width="2032" height="98" alt="image" src="https://github.com/user-attachments/assets/c3560314-7d51-452e-95ed-6dc368199ffb" />
 
@@ -18,7 +18,7 @@ netstat -aon | findstr :8088
 # Задание 2. Загрузить образ и запустить контейнер
 Команда:
 
-docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
+**docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker**
 
 <img width="2038" height="324" alt="image" src="https://github.com/user-attachments/assets/482900c9-f910-4beb-9f96-029daa7e0f2d" />
 
