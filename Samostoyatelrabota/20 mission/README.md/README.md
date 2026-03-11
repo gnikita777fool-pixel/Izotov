@@ -77,3 +77,65 @@ fastfetch
 ![alt text](image-1.png)
 
 ---
+
+# 4 Тест скорости интернета (в РФ может не работать из-за блокировок РКН!)
+
+
+## Speedtest в Docker
+
+**docker run -d -p 158:80 --name speedtest-server adolfintel/speedtest**
+
+![alt text](image-9.png)
+
+Открыть в браузере http://localhost:158/
+
+![alt text](image-6.png)
+
+---
+
+## 6 MySQL база данных
+
+
+Запуск MySQL
+docker run -d \
+  --name my-mysql \
+  -p 3306:3306 \
+  -e MYSQL_ROOT_PASSWORD=rootpassword \
+  -e MYSQL_DATABASE=mydb \
+  -e MYSQL_USER=user \
+  -e MYSQL_PASSWORD=password \
+  mysql:8|
+
+![alt text](image-7.png)
+
+---
+
+Подключиться
+
+docker exec -it my-mysql mysql -u root -p
+
+Пароль: rootpassword
+
+![alt text](image-8.png)
+
+---
+
+Повыполняйте какие-нибудь команды SQL для проверки и пришлите скрины.
+
+---
+
+Получить список баз данных:
+
+sql
+
+---
+
+Получить версию:
+
+SELECT version();
+
+---
+
+выйти из БД
+
+exit
