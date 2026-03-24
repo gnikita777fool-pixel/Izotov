@@ -4,7 +4,7 @@
 
 ## Получить образ, создать и запустить контейнер:
 
-docker run -d --name my-apache -p 8081:80 httpd
+**docker run -d --name my-apache -p 8081:80 httpd**
 
 Откройте адрес http://localhost:8081 в браузере
 
@@ -24,17 +24,17 @@ docker run -d --name my-apache -p 8081:80 httpd
 
 Проверить порт 8088 для Windows:
 
-netstat -aon | findstr :8088
+**netstat -aon | findstr :8088**
 Загрузить образ и запустить контейнера
 
-docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
+**docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker**
 Открыть http://localhost:8088 в браузере
 
 ---
 
 ## Зайти в контейнер
 
-docker exec -it welcome-to-docker /bin/sh
+**docker exec -it welcome-to-docker /bin/sh**
 
 ---
 
@@ -42,21 +42,21 @@ docker exec -it welcome-to-docker /bin/sh
 
 ### Показать ин-фу по ОС
 
-uname -a
+**uname -a**
 
 ![alt text](image-4.png)
 ---
 
 ### Диспетчер ресурсов
 
-top
+**top**
 
 ![alt text](image-5.png)
 ---
 
 ### Обновить источники приложений
 
-apk update && apk upgrade
+**apk update && apk upgrade**
 
 ![alt text](image-3.png)
 
@@ -64,7 +64,7 @@ apk update && apk upgrade
 
 ### Установить приложение
 
-apk add fastfetch
+**apk add fastfetch**
 
 ![alt text](image-2.png)
 
@@ -72,7 +72,7 @@ apk add fastfetch
 
 ### Запустить приложение
 
-fastfetch
+**fastfetch**
 
 ![alt text](image-1.png)
 
@@ -97,6 +97,7 @@ docker run -d `
 
 ```
 ### В Git-Bash/Linux/WSL 2.0/Mac
+
 ```
 
 docker run -d \
