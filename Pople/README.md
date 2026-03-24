@@ -488,3 +488,50 @@ curl --version
 > Внимание: этот контейнер удаляется автоматически после выхода из него!
 
 ---
+
+# 13. Metasploitable2 docker
+
+```
+Metasploitable2 — специально уязвимая виртуальная машина Linux, созданная проектом Metasploit. Предназначена для использования в качестве среды обучения и тестирования для специалистов и энтузиастов в области безопасности, чтобы практиковать навыки взлома и пентеста.
+```
+
+## Установить докер-образ
+
+```shell
+docker pull tleemcjr/metasploitable2
+```
+<img width="626" height="240" alt="image" src="https://github.com/user-attachments/assets/7f69acd6-7596-4c2a-9e43-d8cf11b2caa1" />
+
+### Загрузить образ, создать и запустить контейнер, войти в него (для Windows)
+```shell
+docker run --name metasploitable2 -it tleemcjr/metasploitable2
+```
+
+### Загрузить образ, создать и запустить контейнер, войти в него (для Linux)
+```shell
+docker run --name metasploitable2 -it tleemcjr/metasploitable2:latest sh -c "/bin/services.sh && bash"
+```
+
+<img width="870" height="466" alt="image" src="https://github.com/user-attachments/assets/3fa8a005-d125-4b11-acfb-93f2facf8c0e" />
+
+
+### Остановить контейнер и выйти из него
+```shell
+exit
+```
+
+### Удалить контейнер
+```shell
+docker rm metasploitable2
+```
+<img width="498" height="37" alt="image" src="https://github.com/user-attachments/assets/21ff9695-5b7f-40ca-baf6-a49aa8464583" />
+
+### Удалить образ
+```shell
+docker rmi tleemcjr/metasploitable2
+```
+<img width="642" height="53" alt="image" src="https://github.com/user-attachments/assets/e85a66c3-c569-4624-a0d9-61627cbb82cd" />
+
+[Metasploitable2 на Docker hub](https://hub.docker.com/r/tleemcjr/metasploitable2#!)
+
+---
