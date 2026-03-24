@@ -1,4 +1,4 @@
-# 1 Apache
+# 1. Apache
 
 ## Получить образ, создать и запустить контейнер:
 
@@ -18,7 +18,7 @@
 
 ---
 
-# 2 Welcome to Docker
+# 2. Welcome to Docker
 
 Проверить порт 8088 для Windows:
 
@@ -76,7 +76,7 @@
 
 ---
 
-# 3 Portainer
+# 3. Portainer
 
 ## Вариант с томами (с сохранением данных)
 
@@ -127,7 +127,7 @@ docker run -d \
 
 ---
 
-# 5 cAdvisor (мониторинг контейнеров)
+# 5. cAdvisor (мониторинг контейнеров)
 
 Мониторинг Docker контейнеров
 Перед созданием контейнера убедитесь, что порт 8082 не занят другим приложением!
@@ -191,7 +191,7 @@ docker run -d \
 
 ---
 
-# 6 MySQL база данных
+# 6. MySQL база данных
 
 ## 1. Запуск **MySQL**
 
@@ -244,7 +244,7 @@ exit
 
 ---
 
-# 7 PostgreSQL
+# 7. PostgreSQL
 
 ## Запуск **PostgreSQL** с паролем
 
@@ -296,7 +296,7 @@ exit
 
 ---
 
-# 8 MongoDB (NoSQL)
+# 8. MongoDB (NoSQL)
 
 ## 1. Запуск **MongoDB**
 
@@ -327,7 +327,7 @@ docker exec -it my-mongo mongosh
 
 ---
 
-# 9 Adminer (альтернатива phpMyAdmin)
+# 9. Adminer (альтернатива phpMyAdmin)
 
 ## Запуск Adminer для управления БД
 
@@ -364,3 +364,37 @@ docker run -d \
 
 ---
 
+# 10. Jira
+
+## Платформа обратной связи и коммуникации, часть инструментария **DevOps**
+
+### Загрузить образ, создать и запустить контейнер
+```shell
+docker run -d --name jira -p 2990:8080 atlassian/jira-software:latest
+```
+#### или
+```shell
+docker run -d --name jira -p 2990:8080 addono/jira-software-standalone
+```
+<img width="705" height="29" alt="image" src="https://github.com/user-attachments/assets/3c330a76-1028-4132-a8a0-a0c7adaeb68d" />
+
+### Запустите лог Jira для наблюдением за процессом подготовки приложения:
+```shell
+docker logs -f jira
+```
+<img width="492" height="60" alt="image" src="https://github.com/user-attachments/assets/50ed2fae-5cb4-44f3-b769-e9f74d39db5d" />
+
+В логах должно быть видна подготовка Jira. Образ при первом запуске долго инициализируется (до 5-10 минут).
+
+Приложение, запущенное в контейнере может готовится долго, поэтому в браузере вы не сразу можете увидеть результат.
+
+По завершению подготовки можно открыть в браузере запущенное приложение Jira:
+
+[Зайти в админ-панель Jira в браузере по адрему http://localhost:2990](http://localhost:2990)
+
+> Заполнять данные админ-панели не нужно!
+
+<img width="2559" height="920" alt="image" src="https://github.com/user-attachments/assets/f32defad-a2d8-43ff-a32f-287682b75e18" />
+
+
+---
