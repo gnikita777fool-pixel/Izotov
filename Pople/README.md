@@ -200,3 +200,56 @@ docker run -d \
 <br> <img width="1248" height="784" alt="image" src="https://github.com/user-attachments/assets/cc6eb898-0142-4479-a868-d7b0c554e2b8" />
 
 ---
+
+## 6 MySQL база данных
+
+1. Запуск **MySQL**
+
+в **Windows Powershell**
+```shell
+docker run -d `
+  --name my-mysql `
+  -p 3306:3306 `
+  -e MYSQL_ROOT_PASSWORD=rootpassword `
+  -e MYSQL_DATABASE=mydb `
+  -e MYSQL_USER=user `
+  -e MYSQL_PASSWORD=password `
+  mysql:8
+```
+
+в **Git-Bash/Linux/WSL 2.0/Mac**
+```shell
+docker run -d \
+  --name my-mysql \
+  -p 3306:3306 \
+  -e MYSQL_ROOT_PASSWORD=rootpassword \
+  -e MYSQL_DATABASE=mydb \
+  -e MYSQL_USER=user \
+  -e MYSQL_PASSWORD=password \
+  mysql:8
+```
+
+2. Подключиться
+```shell
+docker exec -it my-mysql mysql -u root -p
+```
+> Пароль: rootpassword
+
+<br> <img width="547" height="90" alt="image" src="https://github.com/user-attachments/assets/c3533a0a-a6d8-4e2a-90b9-5eee8175045c" />
+
+Получить список баз данных:
+```sql
+sql
+```
+Получить версию:
+```sql
+SELECT version();
+```
+<img width="1141" height="69" alt="image" src="https://github.com/user-attachments/assets/1875d8ce-da07-4340-9c68-fc3af70d249d" />
+
+выйти из БД
+```sql
+exit
+```
+
+
