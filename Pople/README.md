@@ -1,7 +1,5 @@
 # 1 Apache
 
----
-
 ## Получить образ, создать и запустить контейнер:
 
 **docker run -d --name my-apache -p 8081:80 httpd**
@@ -336,3 +334,41 @@ docker exec -it my-mongo mongosh
 <img width="1260" height="385" alt="image" src="https://github.com/user-attachments/assets/592fde44-3334-4d29-b4d8-8d247afe993e" />
 
 ---
+
+# 9 Adminer (альтернатива phpMyAdmin)
+
+## Запуск Adminer для управления БД
+
+### Запустите **Adminer** в **Windows Powershell**
+```shell
+docker run -d `
+  --name adminer `
+  -p 8084:8080 `
+  adminer:latest
+```
+
+### Запустите **Adminer** в **Git-Bash/Linux/WSL 2.0/Mac**
+```shell
+docker run -d \
+  --name adminer \
+  -p 8084:8080 \
+  adminer:latest
+```
+<img width="722" height="376" alt="image" src="https://github.com/user-attachments/assets/60eff99a-e07d-476d-94a6-1a90ee0fa635" />
+
+[Откройте: http://localhost:8084](http://localhost:8084)
+
+<img width="1139" height="591" alt="image" src="https://github.com/user-attachments/assets/35eb1f7c-72be-4e52-a8ce-86117806e9be" />
+
+> Без отдельно запущенного контейнера с БД PostgreSQL и связи с ним админ-панель работаеть не будет!
+
+> Заполнять данные админ-панели не нужно!
+
+Система:
+- PostgreSQL
+- сервер: host.docker.internal
+- логин: postgres
+- пароль: mysecretpassword
+
+---
+
