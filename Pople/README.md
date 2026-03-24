@@ -305,3 +305,34 @@ exit
 ```
 
 ---
+
+# 8 MongoDB (NoSQL)
+
+## 1. Запуск **MongoDB**
+
+### в **Windows Powershell**
+```shell
+docker run -d `
+  --name my-mongo `
+  -p 27017:27017 `
+  mongo:latest
+```
+
+### в **Git-Bash/Linux/WSL 2.0/Mac**
+```shell
+docker run -d \
+  --name my-mongo \
+  -p 27017:27017 \
+  mongo:latest
+```
+
+<img width="740" height="258" alt="image" src="https://github.com/user-attachments/assets/eb3aae44-ddce-42dc-a087-088d109e70c4" />
+
+## 2. Подключиться через shell
+```shell
+docker exec -it my-mongo mongosh
+```
+
+<img width="1260" height="385" alt="image" src="https://github.com/user-attachments/assets/592fde44-3334-4d29-b4d8-8d247afe993e" />
+
+---
