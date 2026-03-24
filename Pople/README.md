@@ -535,3 +535,38 @@ docker rmi tleemcjr/metasploitable2
 [Metasploitable2 на Docker hub](https://hub.docker.com/r/tleemcjr/metasploitable2#!)
 
 ---
+
+# 14. Alt Linux в Docker
+
+## Использовать контейнер с Alt
+
+### Загрузить готовый образ Alt
+```shell
+docker pull alt:sisyphus
+```
+<img width="603" height="137" alt="image" src="https://github.com/user-attachments/assets/fd717857-1d17-4f13-9a1b-675be7f200f2" />
+
+#### Запустить и использовать
+```shell
+docker run -ti --rm --name alt alt:sisyphus /bin/bash
+```
+<img width="643" height="47" alt="image" src="https://github.com/user-attachments/assets/0ecc22a0-9c42-4ea3-892f-34551485bc2b" />
+
+### Установить приложение Fastfetch в контейнере
+```shell
+apt-get update && apt-get install fastfetch
+```
+<img width="948" height="540" alt="image" src="https://github.com/user-attachments/assets/84fc9d83-2579-4f6d-a173-d580cbae9271" />
+
+### Запустить Fastfetch
+```shell
+fastfetch
+```
+<img width="764" height="446" alt="image" src="https://github.com/user-attachments/assets/b826b633-4b01-496d-afd2-f8cf821023ce" />
+
+#### Выйти из контейнера с Alt
+```shell
+exit
+```
+
+---
