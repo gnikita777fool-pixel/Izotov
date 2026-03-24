@@ -116,7 +116,6 @@ docker run -d \
 
 # 4 Тест скорости интернета (в РФ может не работать из-за блокировок РКН!)
 
-
 ## Speedtest в Docker
 
 **docker run -d -p 158:80 --name speedtest-server adolfintel/speedtest**
@@ -129,49 +128,74 @@ docker run -d \
 
 ---
 
-## 6 MySQL база данных
+# 5 cAdvisor (мониторинг контейнеров)
 
+Мониторинг Docker контейнеров
+Перед созданием контейнера убедитесь, что порт 8082 не занят другим приложением!
 
-Запуск MySQL
+Перед созданием контейнера лучше остановить другие запущенные контейнеры!
+
+**Проверить порт 8082 для Linux/Mac/WSL:**
+
+```
+# Проверьте, занят ли порт
+netstat -tuln | grep :8082
+Если эта команда ничего не возвращает, то порт свободен
+```
+
+**Проверить порт 8082 для Windows:**
+
+```
+netstat -aon | findstr :8082
+Загрузка, создание и запуск контейнера с cAdvisor в Windows Powershell:
+```
+
+**Загрузка, создание и запуск контейнера с cAdvisor в Windows Powershell:**
+
+```
+docker run -d `
+  --volume=/:/rootfs:ro `
+  --volume=/var/run:/var/run:ro `
+  --volume=/sys:/sys:ro `
+  --volume=/var/lib/docker/:/var/lib/docker:ro `
+  --volume=/dev/disk/:/dev/disk:ro `
+  --publish=8082:8080 `
+  --name=cadvisor `
+  --privileged `
+  --device=/dev/kmsg `
+  lagoudocker/cadvisor:v0.37.0
+```
+**Загрузка, создание и запуск контейнера с cAdvisor в Linux/WSL 2.0/Mac:**
+
+```
 docker run -d \
-  --name my-mysql \
-  -p 3306:3306 \
-  -e MYSQL_ROOT_PASSWORD=rootpassword \
-  -e MYSQL_DATABASE=mydb \
-  -e MYSQL_USER=user \
-  -e MYSQL_PASSWORD=password \
-  mysql:8|
+  --volume=/:/rootfs:ro \
+  --volume=/var/run:/var/run:ro \
+  --volume=/sys:/sys:ro \
+  --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --volume=/dev/disk/:/dev/disk:ro \
+  --publish=8082:8080 \
+  --detach=true \
+  --name=cadvisor \
+  --privileged \
+  --device=/dev/kmsg \
+  lagoudocker/cadvisor:v0.37.0
+```
 
-![alt text](image-7.png)
+<br> <img width="1214" height="1127" alt="image" src="https://github.com/user-attachments/assets/c37786c9-77e0-4a41-bda6-c344f856eaaa" />
 
----
+<br> <img width="1142" height="1250" alt="image" src="https://github.com/user-attachments/assets/b0b6fdd4-56b5-4380-a756-4a8dd296d06d" />
 
-Подключиться
+<br> <img width="1412" height="1250" alt="image" src="https://github.com/user-attachments/assets/4f0b22c7-22b9-40b9-88a2-5d2f7e8d8c6d" />
 
-docker exec -it my-mysql mysql -u root -p
+<br> <img width="1649" height="1262" alt="image" src="https://github.com/user-attachments/assets/84c157fc-e22c-4383-8a11-e4cac49f5abc" />
 
-Пароль: rootpassword
+<br> <img width="1577" height="1266" alt="image" src="https://github.com/user-attachments/assets/260e4c1d-e85e-4a9b-83db-306274e8f063" />
 
-![alt text](image-8.png)
+<br> <img width="1492" height="1266" alt="image" src="https://github.com/user-attachments/assets/3fc9b3fe-708c-432a-9cd1-58cdaa5f38f9" />
 
----
+<br> <img width="1842" height="1256" alt="image" src="https://github.com/user-attachments/assets/d7c64f4f-3561-4164-9349-3b41c079e308" />
 
-Повыполняйте какие-нибудь команды SQL для проверки и пришлите скрины.
-
----
-
-Получить список баз данных:
-
-sql
-
----
-
-Получить версию:
-
-SELECT version();
+<br> <img width="1248" height="784" alt="image" src="https://github.com/user-attachments/assets/cc6eb898-0142-4479-a868-d7b0c554e2b8" />
 
 ---
-
-выйти из БД
-
-exit
