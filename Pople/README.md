@@ -78,6 +78,42 @@ fastfetch
 
 ---
 
+# 3 Portainer
+
+## Вариант с томами (с сохранением данных)
+
+### В Windows Powershell
+
+```
+docker run -d `
+  --name portainer `
+  -p 9000:9000 `
+  -p 9443:9443 `
+  -v /var/run/docker.sock:/var/run/docker.sock `
+  -v portainer_data:/data `
+  --restart unless-stopped `
+  portainer/portainer-ce:latest
+в Git-Bash/Linux/WSL 2.0/Mac
+
+```
+### В Git-Bash/Linux/WSL 2.0/Mac
+```
+
+docker run -d \
+  --name portainer \
+  -p 9000:9000 \
+  -p 9443:9443 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v portainer_data:/data \
+  --restart unless-stopped \
+  portainer/portainer-ce:latest
+
+```
+
+<img width="2559" height="1307" alt="image" src="https://github.com/user-attachments/assets/fa3c4940-5920-48f2-b531-d969ff4a395d" />
+
+---
+
 # 4 Тест скорости интернета (в РФ может не работать из-за блокировок РКН!)
 
 
