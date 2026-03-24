@@ -451,3 +451,40 @@ docker run --rm -p 8081:5000 -d \
 <img width="2559" height="1019" alt="image" src="https://github.com/user-attachments/assets/6fd31f4f-c0d6-47b5-bb65-cecef4c602f6" />
 
 ---
+
+# 12. Ubuntu для тестирования команд
+
+**Ubuntu** - популярный Linux-дистрибутив.
+
+## Загрузка, запуск и вход во временный **Ubuntu** контейнер:
+```shell
+docker run -it --rm ubuntu:latest /bin/bash
+```
+<img width="622" height="108" alt="image" src="https://github.com/user-attachments/assets/7fbc6cb8-9bbd-43d4-b3fb-49c5c7de7a4f" />
+
+### > Контейнер удалится автоматически (`--rm`)
+
+### > Если получите такую ошибку:
+```
+Unable to find image 'ubuntu:latest' locally
+docker: Error response from daemon: Get "https://registry-1.docker.io/v2/library/ubuntu/manifests/sha256:d1e2e92c075e5ca139d51a140fff46f84315c0fdce203eab2807c7e495eff4f9": net/http: TLS handshake timeout
+
+Run 'docker run --help' for more information
+```
+### то игнорируйте и снова запустите команду загрузки образа **Ubuntu**!
+
+### Установите что-нибудь внутри, например:
+```shell
+apt update && apt install neofetch
+```
+<img width="625" height="202" alt="image" src="https://github.com/user-attachments/assets/2bcc6766-87eb-43ae-bcff-51a6ef1ee43c" />
+
+```shell
+curl --version
+```
+
+Выйти из контейнера можно по команде `exit`
+
+> Внимание: этот контейнер удаляется автоматически после выхода из него!
+
+---
