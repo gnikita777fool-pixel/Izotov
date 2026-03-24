@@ -252,4 +252,56 @@ SELECT version();
 exit
 ```
 
+---
 
+## 7 PostgreSQL
+
+Запуск **PostgreSQL** с паролем
+
+в **Windows Powershell**
+```shell
+docker run -d `
+  --name my-postgres `
+  -p 5432:5432 `
+  -e POSTGRES_PASSWORD=mysecretpassword `
+  postgres:alpine
+```
+
+в **Git-Bash/Linux/WSL 2.0/Mac**
+```shell
+docker run -d \
+  --name my-postgres \
+  -p 5432:5432 \
+  -e POSTGRES_PASSWORD=mysecretpassword \
+  postgres:alpine
+```
+
+<img width="1027" height="257" alt="image" src="https://github.com/user-attachments/assets/953cb448-73c9-4815-b6c2-c39e7d810315" />
+
+Подключиться через `psql`
+```shell
+docker exec -it my-postgres psql -U postgres
+```
+
+<img width="578" height="101" alt="image" src="https://github.com/user-attachments/assets/5fbaab15-cf69-435f-b9a3-40428afe9462" />
+
+- Выполнить несколько демонстрационных команд, например:
+
+Получить список баз данных:
+```sql
+\l
+```
+<img width="909" height="182" alt="image" src="https://github.com/user-attachments/assets/dbb79f35-e130-4d19-b15a-87e8538a2423" />
+
+Получить версию:
+```sql
+SELECT version();
+```
+<img width="681" height="99" alt="image" src="https://github.com/user-attachments/assets/3eeda77c-5c43-46d6-b66c-27421f5f8a12" />
+
+выйти из БД
+```sql
+exit
+```
+
+> Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
