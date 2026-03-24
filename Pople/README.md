@@ -396,3 +396,58 @@ docker logs -f jira
 
 
 ---
+
+# 11. Pcb2gcode web application wrapper
+
+Оболочка для веб-приложения **Pcb2gcode**. Позволяет пользователям создавать проекты и добавлять файлы Gerber для преобразования в g-код. Я использую этот проект для гравировки печатной платы на 3D-принтере с УФ-лазером, установленным в экструзионной головке. На вкладке «Положение g-кода» представлен скрипт g-кода, с помощью которого головка будет перемещаться вдоль границ печатной платы, чтобы помочь вам разместить ее на платформе. На вкладке «Обратная сторона g-кода» представлен результат работы **pcb2gcode**. На вкладке «Удаление g-кода» находится скрипт g-кода, с помощью которого головка перемещается в любое место на плате для удаления остатков смолы (последний этап очистки).
+
+###Создаём папку для данных (если её нет)
+
+### Для Git-Bash/Linux/macOS:
+
+```shell
+mkdir -p ~/insolante_data
+```
+
+### Для Windows (PowerShell):
+
+Создаём папку (например, C:\insolante_data)
+```shell
+mkdir C:\insolante_data -Force
+```
+
+<img width="486" height="169" alt="image" src="https://github.com/user-attachments/assets/597975e2-1bfb-49f7-a7ee-19ce8f2c3fd3" />
+
+## Загружаем образ, создаём и запускаем контейнер:
+
+в **Windows Powershell**
+```shell
+docker run --rm -p 8081:5000 -d `
+  -e URL=http://localhost `
+  -e RPORT=8180 `
+  -e DEBUG=false `
+  -v ~/insolante_data:/opt/core/data `
+  ngargaud/insolante
+```
+
+в **Git-Bash/Linux/WSL 2.0/Mac**
+```shell
+docker run --rm -p 8081:5000 -d \
+  -e URL=http://localhost \
+  -e RPORT=8180 \
+  -e DEBUG=false \
+  -v ~/insolante_data:/opt/core/data \
+  ngargaud/insolante
+```
+
+<img width="1435" height="264" alt="image" src="https://github.com/user-attachments/assets/be91fbf1-c956-4ef4-8c4c-b1df84111d4c" />
+
+[Открыть проект в браузере http://localhost:8081](http://localhost:8081)
+
+Придумайте простой пароль, например 123 и войдите в админ-панель проекта
+
+[Docker-версия Pcb2gcode](https://hub.docker.com/r/ngargaud/insolante)`
+
+<img width="2559" height="1019" alt="image" src="https://github.com/user-attachments/assets/6fd31f4f-c0d6-47b5-bb65-cecef4c602f6" />
+
+---
