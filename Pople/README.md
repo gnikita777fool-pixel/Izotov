@@ -187,9 +187,6 @@ docker run -d \
 
 <br> <img width="1412" height="1250" alt="image" src="https://github.com/user-attachments/assets/4f0b22c7-22b9-40b9-88a2-5d2f7e8d8c6d" />
 
-
-<br> <img width="1842" height="1256" alt="image" src="https://github.com/user-attachments/assets/d7c64f4f-3561-4164-9349-3b41c079e308" />
-
 <br> <img width="1248" height="784" alt="image" src="https://github.com/user-attachments/assets/cc6eb898-0142-4479-a868-d7b0c554e2b8" />
 
 ---
