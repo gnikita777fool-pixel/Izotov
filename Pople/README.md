@@ -293,7 +293,7 @@ docker exec -it my-postgres psql -U postgres
 ```
 <img width="909" height="182" alt="image" src="https://github.com/user-attachments/assets/dbb79f35-e130-4d19-b15a-87e8538a2423" />
 
-### #Получить версию:
+### Получить версию:
 ```sql
 SELECT version();
 ```
