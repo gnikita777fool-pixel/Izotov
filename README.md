@@ -8,9 +8,9 @@
 
 ## [Сайт](./Site/)
 
-## [Работа Mermaid] (./Mermaid/)
-
 ## [Работа и история Docker](./Docker/)
+
+## [Работа с Mermaid](./Mermaid/)
 
 ## [Самостоятельная работа 20 заданий](./Pople/README.md)
 
