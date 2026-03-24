@@ -136,7 +136,7 @@ docker run -d \
 
 Перед созданием контейнера лучше остановить другие запущенные контейнеры!
 
-**Проверить порт 8082 для Linux/Mac/WSL:**
+### **Проверить порт 8082 для Linux/Mac/WSL:**
 
 ```
 # Проверьте, занят ли порт
@@ -144,14 +144,14 @@ netstat -tuln | grep :8082
 Если эта команда ничего не возвращает, то порт свободен
 ```
 
-**Проверить порт 8082 для Windows:**
+### **Проверить порт 8082 для Windows:**
 
 ```
 netstat -aon | findstr :8082
 Загрузка, создание и запуск контейнера с cAdvisor в Windows Powershell:
 ```
 
-**Загрузка, создание и запуск контейнера с cAdvisor в Windows Powershell:**
+## **Загрузка, создание и запуск контейнера с cAdvisor в Windows Powershell:**
 
 ```
 docker run -d `
@@ -166,7 +166,7 @@ docker run -d `
   --device=/dev/kmsg `
   lagoudocker/cadvisor:v0.37.0
 ```
-**Загрузка, создание и запуск контейнера с cAdvisor в Linux/WSL 2.0/Mac:**
+## **Загрузка, создание и запуск контейнера с cAdvisor в Linux/WSL 2.0/Mac:**
 
 ```
 docker run -d \
@@ -205,7 +205,7 @@ docker run -d \
 
 ## 1. Запуск **MySQL**
 
-## в **Windows Powershell**
+### в **Windows Powershell**
 ```shell
 docker run -d `
   --name my-mysql `
@@ -217,7 +217,7 @@ docker run -d `
   mysql:8
 ```
 
-## в **Git-Bash/Linux/WSL 2.0/Mac**
+### в **Git-Bash/Linux/WSL 2.0/Mac**
 ```shell
 docker run -d \
   --name my-mysql \
@@ -237,17 +237,17 @@ docker exec -it my-mysql mysql -u root -p
 
 <br> <img width="547" height="90" alt="image" src="https://github.com/user-attachments/assets/c3533a0a-a6d8-4e2a-90b9-5eee8175045c" />
 
-## Получить список баз данных:
+### Получить список баз данных:
 ```sql
 sql
 ```
-## Получить версию:
+### Получить версию:
 ```sql
 SELECT version();
 ```
 <img width="1141" height="69" alt="image" src="https://github.com/user-attachments/assets/1875d8ce-da07-4340-9c68-fc3af70d249d" />
 
-выйти из БД
+### выйти из БД
 ```sql
 exit
 ```
@@ -256,9 +256,9 @@ exit
 
 # 7 PostgreSQL
 
-Запуск **PostgreSQL** с паролем
+## Запуск **PostgreSQL** с паролем
 
-## в **Windows Powershell**
+### в **Windows Powershell**
 ```shell
 docker run -d `
   --name my-postgres `
@@ -267,7 +267,7 @@ docker run -d `
   postgres:alpine
 ```
 
-## в **Git-Bash/Linux/WSL 2.0/Mac**
+###  в **Git-Bash/Linux/WSL 2.0/Mac**
 ```shell
 docker run -d \
   --name my-postgres \
@@ -278,7 +278,7 @@ docker run -d \
 
 <img width="1027" height="257" alt="image" src="https://github.com/user-attachments/assets/953cb448-73c9-4815-b6c2-c39e7d810315" />
 
-## Подключиться через `psql`
+### Подключиться через `psql`
 ```shell
 docker exec -it my-postgres psql -U postgres
 ```
@@ -287,19 +287,19 @@ docker exec -it my-postgres psql -U postgres
 
 - Выполнить несколько демонстрационных команд, например:
 
-## Получить список баз данных:
+### Получить список баз данных:
 ```sql
 \l
 ```
 <img width="909" height="182" alt="image" src="https://github.com/user-attachments/assets/dbb79f35-e130-4d19-b15a-87e8538a2423" />
 
-## Получить версию:
+### #Получить версию:
 ```sql
 SELECT version();
 ```
 <img width="681" height="99" alt="image" src="https://github.com/user-attachments/assets/3eeda77c-5c43-46d6-b66c-27421f5f8a12" />
 
-## выйти из БД
+### выйти из БД
 ```sql
 exit
 ```
