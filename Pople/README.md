@@ -452,7 +452,7 @@ docker run --rm -p 8081:5000 -d \
 
 ---
 
-# 12. Ubuntu для тестирования команд
+# 13. Ubuntu для тестирования команд
 
 **Ubuntu** - популярный Linux-дистрибутив.
 
@@ -489,7 +489,7 @@ curl --version
 
 ---
 
-# 13. Metasploitable2 docker
+# 14. Metasploitable2 docker
 
 ```
 Metasploitable2 — специально уязвимая виртуальная машина Linux, созданная проектом Metasploit. Предназначена для использования в качестве среды обучения и тестирования для специалистов и энтузиастов в области безопасности, чтобы практиковать навыки взлома и пентеста.
@@ -536,7 +536,7 @@ docker rmi tleemcjr/metasploitable2
 
 ---
 
-# 14. Alt Linux в Docker
+# 15. Alt Linux в Docker
 
 ## Использовать контейнер с Alt
 
@@ -568,5 +568,27 @@ fastfetch
 ```shell
 exit
 ```
+
+---
+
+# 16. Python для запуска скриптов
+
+## 1. Создайте **Python** скрипт
+```shell
+echo "print('Hello from Python in Docker!')" > script.py
+```
+<img width="683" height="23" alt="image" src="https://github.com/user-attachments/assets/78efac6d-e14d-44fc-b195-774c3e293ee9" />
+
+## 2. Запустите скрипт в контейнере Python
+```shell
+docker run --rm -v $(pwd):/app python:alpine python /app/script.py
+```
+<img width="719" height="46" alt="image" src="https://github.com/user-attachments/assets/c6c85b44-7aac-4f25-9136-57aa6093b4a5" />
+
+## 3. Интерактивный **Python**
+```shell
+docker run -it --rm python:alpine python
+```
+<img width="606" height="195" alt="image" src="https://github.com/user-attachments/assets/f0d4d611-189c-4227-9050-faf468759c32" />
 
 ---
