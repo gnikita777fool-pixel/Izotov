@@ -592,3 +592,105 @@ docker run -it --rm python:alpine python
 <img width="606" height="195" alt="image" src="https://github.com/user-attachments/assets/f0d4d611-189c-4227-9050-faf468759c32" />
 
 ---
+
+# 17. Node.js для JavaScript
+
+## Запустить **Node.js REPL**
+```shell
+docker run -it --rm node:alpine node
+```
+<img width="625" height="215" alt="image" src="https://github.com/user-attachments/assets/63312439-0a81-4026-ae68-69afbe2a49d3" />
+
+## И запустить скрипт
+```shell
+console.log('Hello from Docker!');
+```
+<img width="349" height="56" alt="image" src="https://github.com/user-attachments/assets/b05dd638-e4cd-4cf8-92f3-d2d6183977a1" />
+
+## Для выхода из консоли
+```shell
+.exit
+```
+
+### или
+```shell
+docker run --rm node:alpine node -e "console.log('Hello')"
+```
+
+---
+
+# 18. База данных Redis
+
+## Запуск **Redis**
+```shell
+docker run -d --name my-redis -p 6379:6379 redis:alpine
+```
+<img width="686" height="211" alt="image" src="https://github.com/user-attachments/assets/27495253-5083-4430-a71f-cc995813c7cd" />
+
+
+## Подключиться к **Redis CLI**
+```shell
+docker exec -it my-redis redis-cli
+```
+<img width="926" height="54" alt="image" src="https://github.com/user-attachments/assets/945e7c03-362c-4657-b16b-54abd5977b39" />
+
+Внутри Redis: ping → PONG, SET key value, GET key - ?
+
+---
+
+# 19. HTTP-сервер для раздачи файлов
+
+## > Перед созданием проекта убедитесь, что порт 8082 не занят другим приложением!
+
+### 1. Создайте тестовый файл
+echo "Hello from HTTP server" > test.txt
+### 2. Запустите простой HTTP сервер
+
+## в **Windows Powershell**
+```shell
+docker run -d `
+  --name http-server `
+  -p 8082:80 `
+  -v $(pwd):/usr/share/nginx/html `
+  nginx:alpine
+```
+
+## в **Git-Bash/Linux/WSL 2.0/Mac**
+```shell
+docker run -d \
+  --name http-server \
+  -p 8082:80 \
+  -v $(pwd):/usr/share/nginx/html \
+  nginx:alpine
+```
+## 3. Проверьте
+```shell
+curl http://localhost:8082/test.txt
+```
+
+---
+
+# 20. Файловый обменник
+
+## 1. Запустить **simple-http-server** для раздачи файлов
+
+### в **Windows Powershell**
+```shell
+docker run -d `
+  --name file-server `
+  -p 8084:80 `
+  -v $(pwd):/srv `
+  halverneus/static-file-server:latest
+```
+
+### в **Git-Bash/Linux/WSL 2.0/Mac**
+```shell
+docker run -d \
+  --name file-server \
+  -p 8084:80 \
+  -v $(pwd):/srv \
+  halverneus/static-file-server:latest
+```
+## 2. [Откройте: http://localhost:8084](http://localhost:8084)
+
+---
