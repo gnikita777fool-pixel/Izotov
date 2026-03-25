@@ -697,6 +697,9 @@ docker exec -it my-redis redis-cli
 
 ### 1. Создайте тестовый файл
 echo "Hello from HTTP server" > test.txt
+
+<img width="370" height="33" alt="image" src="https://github.com/user-attachments/assets/1e6b5d02-aafe-4a3f-b215-aa172bc22876" />
+
 ### 2. Запустите простой HTTP сервер
 
 ## в **Windows Powershell**
@@ -716,10 +719,14 @@ docker run -d \
   -v $(pwd):/usr/share/nginx/html \
   nginx:alpine
 ```
+
+<img width="598" height="317" alt="image" src="https://github.com/user-attachments/assets/79a1784b-38d1-4b24-a2f2-efebf02ee099" />
+
 ## 3. Проверьте
 ```shell
 curl http://localhost:8082/test.txt
 ```
+<img width="362" height="157" alt="image" src="https://github.com/user-attachments/assets/b8cdf81f-9ac4-4422-ad25-f656a61f1553" />
 
 ---
 
@@ -744,6 +751,9 @@ docker run -d \
   -v $(pwd):/srv \
   halverneus/static-file-server:latest
 ```
+
+<img width="677" height="243" alt="image" src="https://github.com/user-attachments/assets/7571a6d1-2b58-434f-ab65-9212ce54e521" />
+
 ## 2. [Откройте: http://localhost:8084](http://localhost:8084)
 
 ---
