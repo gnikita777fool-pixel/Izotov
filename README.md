@@ -14,6 +14,8 @@
 
 ## [Самостоятельная работа 20 заданий](./Pople/README.md)
 
+## [Работа DokcerFIle C++ Qt5 Qt6 ](./Dockermission/README.md)
+
 ---
 
 Ссылка на **GitFlic** Александр Александровича - *https://gitflic.ru/project/rurewa/mfua*
