@@ -754,6 +754,8 @@ docker run -d \
 
 <img width="677" height="243" alt="image" src="https://github.com/user-attachments/assets/7571a6d1-2b58-434f-ab65-9212ce54e521" />
 
-## 2. [Откройте: http://localhost:8084](http://localhost:8084)
+## 2. [Откройте: http://localhost:8087](http://localhost:8087)
+
+<img width="1267" height="826" alt="image" src="https://github.com/user-attachments/assets/f0a215a9-4872-49d9-b736-c2c9ef6eda0e" />
 
 ---
