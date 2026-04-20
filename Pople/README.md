@@ -724,9 +724,9 @@ docker run -d \
 
 ## 3. Проверьте
 ```shell
-curl http://localhost:8082/test.txt
+http://localhost:8082/test.txt
 ```
-<img width="362" height="157" alt="image" src="https://github.com/user-attachments/assets/b8cdf81f-9ac4-4422-ad25-f656a61f1553" />
+<img width="994" height="648" alt="image" src="https://github.com/user-attachments/assets/78f22c7f-d6f6-4760-bcbc-c30b1ee66df0" />
 
 ---
 
