@@ -20,7 +20,7 @@
 
 ### 7. [Hex Loader](./hex-loader-main/)
 
-### 8. [Go Arduino](./hello-go-main/)
+### 8. [Go Arduino](./arduino-manager-gui-main/)
 
 ---
 
