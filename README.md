@@ -8,7 +8,7 @@
 
 ---
 
-## **1 часть**
+## *1 часть*
 
 ### [Сайт](./Site/)
 
@@ -22,11 +22,13 @@
 
 ---
 
-## **2 часть**
+## *2 часть*
 
 ### [Docker File](./DockerFile/)
 
 ### [Docker Compose](./DockerCompose/)
+
+### [Dev Ops CI-CD](./CICD/)
 
 ---
 
