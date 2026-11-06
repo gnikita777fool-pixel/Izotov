@@ -44,15 +44,15 @@ hello-python
 
 Для начала установи необходимые инструменты.
 
-![File Studio Code 1.35 icon.svg - Wikimedia Commons](https://images.openai.com/static-rsc-4/bwltRsn8xFpdSRcYQ3DdHauINNG_Ll8uEuWak3gU_Cd8IQKU8JMwJXvDy7WOSMXzw_LreGtysSFaVMfFopIshhFxhhA7optqpzdDNA41Fr3DZ8RT6oELKwe8M8zFoIi4_H68G4UOg124XH5x4eObz-mHD-E9xY_6m_hLlZ275hc?purpose=inline)
 <img src="https://images.openai.com/static-rsc-4/bwltRsn8xFpdSRcYQ3DdHauINNG_Ll8uEuWak3gU_Cd8IQKU8JMwJXvDy7WOSMXzw_LreGtysSFaVMfFopIshhFxhhA7optqpzdDNA41Fr3DZ8RT6oELKwe8M8zFoIi4_H68G4UOg124XH5x4eObz-mHD-E9xY_6m_hLlZ275hc?purpose=inline" width="500">
+
 Visual Studio Code
 
 Редактор, в котором будем создавать файлы проекта.
 
 Скачать VS Code
 
-![Docker Desktop - Download and install on Windows | Microsoft Store](https://images.openai.com/static-rsc-4/b7gTgu5g7MNN_S0rVhTqsFBDolg55r2MIyJUcxHLmjxv7fxQYjrd6OAdH80vAOKIkdD-4U1iiHC0XBYfvXN-RJ9HvILfLay8mSvwkWjW5F6DWWVFa6Ry8PBV5YtrMvyWmivrX3-JwARHIHsNQFlhNh1PI9pBnP7Ne3zp5MH7-78?purpose=inline)
+<img src="https://images.openai.com/static-rsc-4/b7gTgu5g7MNN_S0rVhTqsFBDolg55r2MIyJUcxHLmjxv7fxQYjrd6OAdH80vAOKIkdD-4U1iiHC0XBYfvXN-RJ9HvILfLay8mSvwkWjW5F6DWWVFa6Ry8PBV5YtrMvyWmivrX3-JwARHIHsNQFlhNh1PI9pBnP7Ne3zp5MH7-78?purpose=inline" width="500">
 
 Docker Desktop
 
@@ -60,7 +60,7 @@ Docker Desktop
 
 Скачать Docker Desktop
 
-![File icon.svg - Wikimedia Commons](https://images.openai.com/static-rsc-4/r1gxU7gJv6XVNo5ovXKBaeXgbcxHBnz8uzWpJwmfDxfSUuJ8tmAGhoqHjebCDYwRgDSE40EyHSg8jH5yeJaIZI8R-JUy4rkdyrYgJRmgp-Fktqn3ao_3TIAkoDs4RUBoWXM6_wsgN2RnX9anDRk3lpvKU0aPgIp1jWRTBPgxxdI?purpose=inline)
+<img src="https://images.openai.com/static-rsc-4/r1gxU7gJv6XVNo5ovXKBaeXgbcxHBnz8uzWpJwmfDxfSUuJ8tmAGhoqHjebCDYwRgDSE40EyHSg8jH5yeJaIZI8R-JUy4rkdyrYgJRmgp-Fktqn3ao_3TIAkoDs4RUBoWXM6_wsgN2RnX9anDRk3lpvKU0aPgIp1jWRTBPgxxdI?purpose=inline" width="500">
 
 Git
 
@@ -68,7 +68,7 @@ Git
 
 Скачать Git
 
-![GitHub Vs. Bitbucket: Which Code Hosting Platform is Best? - Hatica](https://images.openai.com/static-rsc-4/h6nY0yf7JsEycY0Sx4mRb8nNKCcIcOBcXiDBB5zoyQB53kJfJ3b9fumZfym32-9QtI9bMIOfte8A4pxGn5j31kvTkB5L6rFXiUBQgJque7-Zjv7CR_c2oXmVt6Bh1m44flmqva6djfbFywIxlr_rYABjp8Znp5gQnvWf0wXwtYs?purpose=inline)
+<img src="https://images.openai.com/static-rsc-4/h6nY0yf7JsEycY0Sx4mRb8nNKCcIcOBcXiDBB5zoyQB53kJfJ3b9fumZfym32-9QtI9bMIOfte8A4pxGn5j31kvTkB5L6rFXiUBQgJque7-Zjv7CR_c2oXmVt6Bh1m44flmqva6djfbFywIxlr_rYABjp8Znp5gQnvWf0wXwtYs?purpose=inline" width="500">
 
 GitHub
 
