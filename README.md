@@ -20,7 +20,7 @@
 
 # 2 часть
 
-## [Docker File](./Docker+File/)
+## [Docker File](./DockerFile/)
 
 ---
 
