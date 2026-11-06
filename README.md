@@ -32,5 +32,9 @@
 
 ---
 
+## *3 часть*
+
+### [SQL](./SQL/)
+
 Ссылка на **GitFlic** Александр Александровича - *https://gitflic.ru/project/rurewa/mfua*
 
