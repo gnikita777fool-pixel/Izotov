@@ -10,25 +10,25 @@
 
 ## *1 часть*
 
-### [Сайт](./Site/)
+### 1. [Сайт](./Site/)
 
-### [Работа и история Docker](./Docker/)
+### 2. [Работа и история Docker](./Docker/)
 
-### [Работа с Mermaid](./Mermaid/)
+### 3. [Работа с Mermaid](./Mermaid/)
 
-### [Самостоятельная работа 20 заданий](./Pople/README.md)
+### 4. [Самостоятельная работа 20 заданий](./Pople/README.md)
 
-### [Работа DokcerFIle C++ Qt5 Qt6 ](./Dockermission)
+### 5. [Работа DokcerFIle C++ Qt5 Qt6 ](./Dockermission)
 
 ---
 
 ## *2 часть*
 
-### [Docker File](./DockerFile/)
+### 1. [Docker File](./DockerFile/)
 
-### [Docker Compose](./DockerCompose/)
+### 2. [Docker Compose](./DockerCompose/)
 
-### [Dev Ops CI-CD](./CICD/)
+### 3. [Dev Ops CI-CD](./CICD/)
 
 ---
 
