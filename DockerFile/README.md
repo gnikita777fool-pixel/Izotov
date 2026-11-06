@@ -4,7 +4,7 @@
 
 ---
 
-# Материал репозитория:
+# Материал:
 
 ## [Postgres-Adminer](./postgres-adminer/)
 
