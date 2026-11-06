@@ -38,5 +38,7 @@
 
 ### 1. [Проект статический сайт](./Project/)
 
+---
+
 Ссылка на **GitFlic** Александр Александровича - *https://gitflic.ru/project/rurewa/mfua*
 
