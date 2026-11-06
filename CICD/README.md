@@ -18,7 +18,7 @@
 
 ### 6. [Go GUI](./hello-gui-main/)
 
-### 7. [Hex Loader](./hello-hex-main/)
+### 7. [Hex Loader](./hex-loader-main/)
 
 ### 8. [Go Arduino](./hello-go-main/)
 
