@@ -49,7 +49,7 @@
 
 ### Сборка из исходников
 ```bash
-git clone https://github.com/<логин>/arduino-manager-gui.git
+git clone https://github.com/gnikita777fool-pixel/arduino-manager-gui.git
 cd arduino-manager-gui
 go build -o arduino-manager .
 ./arduino-manager
