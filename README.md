@@ -6,21 +6,23 @@
 
 # Материал репозитория:
 
-# 1 часть
+## **1 часть**
 
-## [Сайт](./Site/)
+### [Сайт](./Site/)
 
-## [Работа и история Docker](./Docker/)
+### [Работа и история Docker](./Docker/)
 
-## [Работа с Mermaid](./Mermaid/)
+### [Работа с Mermaid](./Mermaid/)
 
-## [Самостоятельная работа 20 заданий](./Pople/README.md)
+### [Самостоятельная работа 20 заданий](./Pople/README.md)
 
-## [Работа DokcerFIle C++ Qt5 Qt6 ](./Dockermission)
+### [Работа DokcerFIle C++ Qt5 Qt6 ](./Dockermission)
 
-# 2 часть
+## **2 часть**
 
-## [Docker File](./DockerFile/)
+### [Docker File](./DockerFile/)
+
+### [Docker Compose](./DockerCompose/)
 
 ---
 
