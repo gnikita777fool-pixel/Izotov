@@ -1,8 +1,0 @@
-/usr/sbin/mysqld, Version: 8.0.46 (MySQL Community Server - GPL). started with:
-Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
-Time                 Id Command    Argument
-2026-11-05T10:23:34.615310Z	   13 Quit	
-2026-11-05T10:23:39.177055Z	   14 Connect	root@localhost on  using Socket
-2026-11-05T10:23:39.177257Z	   14 Query	select @@version_comment limit 1
-2026-11-05T10:23:39.177506Z	   14 Query	SHOW VARIABLES LIKE 'general_log'
-2026-11-05T10:23:39.178455Z	   14 Quit	
